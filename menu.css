@@ -1,0 +1,250 @@
+nav {
+    width: 100vw;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+nav.navShadow {
+    box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+    height: 100px;
+    
+}
+
+nav.navShadow #word-mark {
+    opacity: 0;
+}
+
+#brand, #menu,
+ul {
+    display: flex;
+    align-items: center;
+}
+
+#brand {
+    padding-left: 40px;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    background: url("images/nav/logo.png");
+    border-radius: 50%;
+    cursor: auto;
+}
+
+#word-mark {
+    width: 90px;
+    height: 20px;   
+    background: #000;
+    color:#6BFF50;
+    border-radius: 90px;
+    margin-left: 15px;
+    opacity: 1;
+    transition: all 0.3s;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+
+
+#menu {
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+#menu li {
+    margin-left: 20px;
+    display: inline;
+}
+
+#menu li a {
+    width: 80px;
+    height: 20px;
+    background: #6BFF50;
+    display: block;
+    border-radius: 90px;
+    text-align: center;
+    text-decoration: none;
+    color:  black;
+    padding: 5px;
+    border: #6BFF50 1px solid;
+    transition: all 0.3s;
+}
+
+#menu li a:hover {
+    transition: all 0.3s;
+    background: #282828;
+    color: #6BFF50;
+    border: #6BFF50 1px solid;
+}
+
+.icon{
+    display:none;
+}
+
+@media screen and (max-width: 850px){
+    nav{
+        width: 100vw;
+        height: 50px;
+    }
+
+   
+
+    #menu {
+        justify-content:left;
+        margin-left: -10%;
+    }
+
+    #menu li {
+        margin-left: 10px;
+        display: inline;
+    }
+
+    #menu li a {
+        width: 40px;
+        height: fit-content;
+        font-size: 8px;
+        background: #6BFF50;
+        display: block;
+        border-radius: 90px;
+        text-align: center;
+        text-decoration: none;
+        color:  black;
+        padding: 3px;
+        border: #6BFF50 1px solid;
+        transition: all 0.3s;
+    }
+    
+    #brand {
+        padding-left: 10px;
+    }
+    
+    #logo {
+        width: 40px;
+        height: 40px;
+        background: url("images/nav/logo.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        cursor: auto;
+    }
+    
+    #word-mark {
+        width: fit-content;
+        height: fit-content;  
+        background: #000;
+        color:#6BFF50;
+        border-radius: 90px;
+        margin-left: 10px;
+        font-size: 8px;
+        opacity: 1;
+        transition: all 0.3s;
+        text-align: center;
+        padding: 3px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+   
+
+    #nav {
+        
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      #menu {
+        display: none;
+        justify-content:right;
+        margin-left: 0%;
+        padding-right: 0px;
+      }
+
+      #menu ul{
+        right: 0;
+        margin-top: 50px;
+        display:list-item;
+        list-style: none ;   
+    }
+
+    #menu li a {
+        margin-top: -21px;
+        right: 0;
+        width: 200px;
+        height: fit-content;
+        font-size: 12px;
+        background: #6BFF50;
+        display: block;
+        border-radius: 0px;
+        text-align: center;
+        text-decoration: none;
+        color:  black;
+        padding: 3px;
+        border: #000 3px solid;
+        transition: all 0.3s;
+    }
+      
+      /* Style navigation menu links */
+      nav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      /* Style the hamburger menu */
+      nav a.icon {
+        background: #6BFF50;
+        color: #000;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      /* Add a grey background color on mouse-over */
+      nav a:hover {
+        background-color: #000;
+        color: #6BFF50;
+        border: #6BFF50 1px solid;
+      }
+      
+     
+
+  
+    #brand {
+        padding-left: 5px;
+    }
+    
+    #logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 25px;
+        height: 25px;
+        background: url("images/nav/logo.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        cursor: auto;
+    }
+    
+    #word-mark {
+        display: none;
+    }
+}

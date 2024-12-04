@@ -1,0 +1,149 @@
+
+ 
+ /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    margin-left: 24vw;
+    position: relative;
+    box-sizing: border-box;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: block;
+    margin: auto;
+    
+    padding-bottom: 5px;
+    
+  }
+
+  .mySlides img{
+    width:49vw; 
+    height: 60vh; 
+    border: #6BFF50 3px solid;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    
+    top: 40%;
+    width: auto;
+    padding: 10px;
+    /*padding: 16px 300px 16px 300px;*/
+    margin-top: -50px;
+    margin-left: 15vw;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #6BFF50;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    padding: 9px;
+    background-color: #161616;
+    border: #6BFF50 1px solid;
+    color: #6BFF50;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text 
+  .caption-container {
+    
+  }*/
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    display: block;
+    margin: auto;
+    float: left;
+    width: 8.167vw;
+    border-top: #6BFF50 2px solid;
+    
+  }
+
+  .column img{
+    width: 100%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    
+    opacity: 0.4;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 580px){
+    .container{
+      margin-left: 8vw;
+    }
+
+    .mySlides img{
+      
+      height: 30vh;
+      width: 72vw;
+
+    }
+
+    .column{
+      width: 12vw;
+    }
+
+    .column img{
+      width: 12vw;
+      height: 6vh;
+    }
+
+    .prev,
+  .next {
+    cursor: pointer;
+    
+    top: 40%;
+    width: auto;
+    padding: 10px;
+    /*padding: 16px 300px 16px 300px;*/
+    margin-top: -50px;
+    margin-left: 18vw;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #6BFF50;
+  }
+  }

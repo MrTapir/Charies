@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Charies Download</title>
+      <link rel="icon" type="image/x-icon" href="images/nav/logo.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="home.css" rel="stylesheet">
+      <link href="menu.css" rel="stylesheet">
+      <link href="footer.css" rel="stylesheet">
+    </head>
+    <body>
+      
+      <header>
+        <nav>
+            <div id="brand">
+                <div id="logo"></div>
+                <div id="word-mark">Charies</div>
+
+                
+            </div>
+            <div id="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="enemies.html">Enemies</a></li>
+                  <li><a href="spells.html">Spells</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="download.html">Download</a></li>
+                </ul>
+            </div>
+             
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="Hamburger menu">
+            <em class="fa fa-bars"></em>
+          </a>
+        </nav>
+    </header>
+
+    <main>
+    <section class="downloadSec">
+        <div id="download">
+            <button type = "button" onclick = "downloadFile()"> Download Charies</button>
+        </div>
+        <h3>Disclaimer:</h3>
+        <p>The game is in early access so some content may still be missing and you might encounter bugs.</p>
+    </section>
+  </main>
+
+    <footer>
+      <div id="foot">
+        <div class="footColumns">
+          <h2>Website</h2>
+          <div class="siteList">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="enemies.html">Enemies</a></li>
+              <li><a href="spells.html">Spells</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="download.html">Download</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footColumns">
+          <h2>Follow us:</h2>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/footer/yt.png" alt="The youtube icon"></a>
+            <a href="https://www.tiktok.com" target="_blank"><img src="images/footer/tt.png" alt="The tiktok icon"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/footer/ig.png" alt="The instagram icon"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/footer/fb.png" alt="The facebook icon"></a>
+        </div>
+      </div>
+        <div class="copyrights">
+            <p>This website is a student credit project</p>
+            <p>© Maxim Bogora 2024</p>
+            <p>bogorma1@uhk.cz</p>
+        </div>
+    </footer>
+
+    <script>
+      function downloadFile() {
+           window.open("BuildProjektu.zip")
+        }
+  
+        function myFunction() {
+    var x = document.getElementById("menu");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+    </script>
+  </body>
+  
+
+</html>

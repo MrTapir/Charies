@@ -1,0 +1,850 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Faculty Glyphic", sans-serif;
+    background-color: #161616;
+}
+
+.faculty-glyphic-regular {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.hero {
+    background: url("images/main/IndexBG.jpg") no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/***************************************************************************************************/
+
+section{
+    height: 100vh;
+    max-width: 100%;
+    color: #6BFF50;
+    font-size: 25px;
+    padding: 10px 0px 10px 25px;
+    align-content: center;
+}
+
+
+
+
+
+#slideshow h1{
+    padding-top: 0px;
+    text-align: center;
+}
+
+
+
+#content hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(191, 255, 180, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*Introduction**************************************************************************************************/
+
+#intro {
+    height: 250vh;
+    max-width: 100%;
+    color: #6BFF50;
+    font-size: 25px;
+    padding: 50px 0px 10px 25px;
+    align-content: center;
+}
+
+.introLeft{
+    margin-top: 8%;
+    display: flex;
+    align-items: self-end;
+}
+
+.introLeft div{
+    padding-left: 3%;
+    padding-bottom: 10%;
+}
+
+#introRight{
+    margin-top: 8%;
+    display: flex;
+    align-items: self-start;
+}
+
+#introRight div{
+    padding-right: 3%;
+    padding-bottom: 10%;
+    text-align: right;
+}
+
+#intro h1{
+ padding-top: 0px;
+ text-decoration:underline;
+}
+
+#intro p{
+    font-size: 25px;
+}
+
+#intro img{
+    height: 50vh;
+    width: 40vw;
+    border: #6BFF50 4px double;
+}
+
+/*Summary**************************************************************************************************/
+
+#summary{
+    text-align: center;
+}
+
+#summary h1{
+    margin-top: -10%;
+}
+
+#summary p{
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+/*Download**************************************************************************************************/
+
+#download button{
+    
+    
+    width: 250px;
+    height: 80px;
+    background: #6BFF50;
+    color: black;
+    border-radius: 90px;
+    display: block;
+    margin: auto;
+    opacity: 1;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+    font-weight: bold;
+    border: #6BFF50 1px solid;
+}
+
+#download button:hover{
+    background: black;
+    color: #6BFF50;
+    border: #6BFF50 1px solid;
+    cursor: pointer;
+}
+
+.downloadSec h3{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.downloadSec p{
+    text-align: center;
+    font-size: 15px;
+}
+
+/*Enemies**************************************************************************************************/
+
+#enemyIntro{
+    height: 100vh;
+    text-align: center;
+    
+}
+
+#enemyIntro h1{
+    
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#enemyIntro h2,h3{
+    
+    font-size: 35px;
+}
+
+#enemyIntro hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(191, 255, 180, 0.75), rgba(0, 0, 0, 0));
+}
+
+.enemies{
+    height: fit-content;
+    padding-bottom: 5%;
+}
+
+.enemies h1{
+    text-align: center;
+}
+
+.enemy{
+    margin-top: 8%;
+    margin-left: 4%;
+    display: flex;
+    align-items: self-start;
+    height: 40vh;
+}
+
+.enemy div{
+    width: 80vw;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    text-align: Left;
+}
+
+.enemies hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(72, 66, 66, 0.541), rgba(0, 0, 0, 0))
+}
+
+.enemy h2{
+ padding-top: 0px;
+ text-decoration:underline;
+ 
+}
+
+.enemy ul{
+    max-width: 50vw;
+    display:list-item;
+    list-style: none ;   
+}
+
+.enemy li{
+    margin-top: 2%;
+    list-style:circle;
+    font-size: 25px;
+    
+    
+}
+
+.enemy img{
+    margin-right: 10%;
+    width: 230px;
+    height: 230px;
+    border: #6BFF50 2px solid;
+}
+
+/*Spells****************************************************************************************************/
+
+#spellsIntro{
+    height: 100vh;
+    text-align: center;
+    
+}
+
+#spellsIntro hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(191, 255, 180, 0.75), rgba(0, 0, 0, 0));
+}
+
+#spellsIntro h1{
+    
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+#spellsIntro h2,h3{
+    
+    font-size: 35px;
+}
+
+
+
+#spells{
+    height: fit-content;
+    padding-bottom: 5%;
+}
+
+#spells h1{
+    text-align: center;
+}
+
+.spell{
+    margin-top: 8%;
+    margin-left: 4%;
+    display: flex;
+    align-items: self-start;
+    height: 40vh;
+}
+
+.spell div{
+    width: 80vw;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    text-align: Left;
+}
+
+#spells hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(72, 66, 66, 0.541), rgba(0, 0, 0, 0))
+}
+
+.spell h2{
+ padding-top: 0px;
+ text-decoration:underline;
+ 
+}
+
+.spell ul{
+    max-width: 50vw;
+    display:list-item;
+    list-style: none ;   
+}
+
+.spell li{
+    margin-top: 2%;
+    list-style:circle;
+    font-size: 25px;
+    
+    
+}
+
+.spell img{
+    margin-right: 10%;
+    height: 250px;
+    width: 400px;
+    border: #6BFF50 2px solid;
+}
+
+
+#spellTable table{
+    max-width: 70vw;
+    display: block;
+    margin: auto;
+}
+
+#spellTable table, th, td {
+    border: 1px solid #6BFF50;
+}
+
+#spellTable th,td{
+    width: fit-content;
+    padding: 10px;
+    background-color: #282828;
+}
+
+
+/*Separator*************************************************************************************************/
+
+::-webkit-scrollbar {
+    width: 16px;
+    background-color: black !important;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 1px solid black;
+    background-clip: content-box;
+    background-color: #6BFF50;
+}
+
+/*až nakonec*/
+.separator-wave {
+    display: block;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    margin: 0;
+    z-index: 5;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    float: left;
+}
+
+.wave-1 > use {
+    animation: move-forever1 10s linear infinite;
+}
+.wave-1 > use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+.wave-2 > use {
+    animation: move-forever2 8s linear infinite;
+}
+.wave-2 > use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+.wave-3 > use {
+    animation: move-forever3 6s linear infinite;
+}
+.wave-3 > use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+.wave-4 > use {
+    animation: move-forever4 4s linear infinite;
+}
+.wave-4 > use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+@keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+@keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+@keyframes move-forever3 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+@keyframes move-forever4 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@media screen and (max-width: 1500px){
+    /*Enemy**************************************************************************************************************/
+    
+    .spell{
+        height: 60vh;
+    }
+    
+    .spell img{
+        margin-top: 3%;
+    }
+
+    
+}
+
+@media screen and (max-width: 1250px){
+
+   /*Intro ********************************************************************************************************/
+
+    #intro {
+        margin-top: -10%;
+        height: fit-content;
+        max-width: 100%;
+        color: #6BFF50;
+        font-size: 25px;
+        padding: 50px 0px 10px 25px;
+        align-content: center;
+    }
+    
+    .introLeft{
+        margin-top: 8%;
+        display: flex;
+        align-items: self-end;
+    }
+    
+    .introLeft div{
+        padding-left: 3%;
+        padding-bottom: 10%;
+    }
+    
+    #introRight{
+        margin: 8% 5%;
+        display: flex;
+        align-items: self-start;
+    }
+    
+    #introRight div{
+        padding-right: 3%;
+        padding-bottom: 10%;
+        text-align: right;
+    }
+    
+    #intro h1{
+     padding-top: 0px;
+     text-decoration:underline;
+    }
+    
+    #intro p{
+        font-size: 25px;
+    }
+    
+    #intro img{
+        margin-top: 5%;
+        height: 30vh;
+        width: 40vw;
+        border: #6BFF50 4px double;
+    }
+
+    /*Enemy**************************************************************************************************************/
+    
+    .enemy{
+        height: 50vh;
+    }
+    
+    .enemy img{
+        margin-top: 3%;
+    }
+
+    #spellTable table{
+        max-width: 70vw;
+        display: block;
+        margin: auto;
+    }
+    
+    #spellTable th,td{
+        
+        width: fit-content;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #spellTable table{
+        max-width: 80vw;
+        
+        margin: 10%;
+    }
+    
+    #spellTable th,td{
+        font-size: 15px;
+        height: fit-content;
+        
+    }
+}
+
+@media screen and (max-width: 850px){
+    /*Summary************************************************************************************************************/
+
+    #summary{
+        height: fit-content;
+        margin: 5% 0%;
+    }
+    
+    #summary h1{
+        margin-top: 0%;
+        
+    }
+    
+    #summary p{
+        display: block;
+        margin: auto;
+        max-width: 70%;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+
+    /*Enemy**************************************************************************************************************/
+    
+    .enemy li{
+ 
+        font-size: 20px;
+ 
+    }
+
+    /*Spell**************************************************************************************************************/
+    
+    .spell li{
+ 
+        font-size: 20px;
+ 
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .spell li{
+        margin-top: 2.5%;
+        font-size: 20px;
+
+    }
+       
+    .spell ul{
+        margin-left: -3%;
+        margin-top: -5%;
+        max-width: 50vw;
+    }
+       
+       
+   .spell img{
+        margin-top: 7%;
+        margin-right: 10%;
+        height: 262.5px;
+        width: 300px;
+        
+    }
+}
+
+
+@media screen and (max-width: 650px){
+
+    /*Enemy**************************************************************************************************************/
+    
+    .enemy li{
+        margin-top: 2.5%;
+        font-size: 20px;
+
+    }
+       
+    .enemy ul{
+        margin-left: -3%;
+        margin-top: -5%;
+        max-width: 50vw;
+    }
+       
+       
+   .enemy img{
+        margin-top: 7%;
+        margin-right: 10%;
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    /*Spells*************************************************************************************************************/
+    #spells{
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+    
+    #spells h1{
+        text-align: center;
+    }
+    
+    .spell{
+        margin-top: 8%;
+        margin-left: 4%;
+        display:block;
+        align-items: center;
+        margin: auto;
+        height: fit-content;
+    }
+    
+    .spell div{
+        width: 80vw;
+        
+        padding-bottom: 3%;
+        text-align: Left;
+    }
+    
+    .spell h2{
+        text-align: center;
+        font-size: 25px;
+     
+    }
+    
+    .spell ul{
+        display: block;
+        margin: auto;
+        max-width: 50vw;  
+        padding-bottom: 5%;
+    }
+    
+    .spell li{
+        margin-top: 5%;
+        font-size: 20px;
+        
+        
+    }
+    
+    .spell img{
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+    /*Intro ******************************************************************************************************/
+
+    #intro {
+        margin-top: 10%;
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+
+    #intro hr{
+        margin: 10% 0%;
+    }
+    
+    .introLeft{
+        margin-top: 10%;
+        margin-left: 4%;
+        display:block;
+        align-items: center;
+        margin: auto;
+        height: fit-content;
+    }
+    
+    .introLeft div{
+        width: 80vw;
+        
+        padding-bottom: 3%;
+        text-align: Left;
+    }
+    
+    #introRight{
+        margin-top: 8%;
+        margin-left: 4%;
+        display:block;
+        align-items: center;
+        margin: auto;
+        height: fit-content;
+    }
+    
+    #introRight div{
+        width: 80vw;
+        
+        padding-bottom: 3%;
+        text-align: Left;
+    }
+    
+    #intro h1{
+        text-align: center;
+        
+        font-size: 25px;
+    }
+    
+    #intro p{
+        display: block;
+        margin: auto;
+        text-align:center;
+        max-width: 50vw;  
+        padding-bottom: 5%;
+        margin-top: 5%;
+        font-size: 20px;
+    }
+    
+    #intro img{
+        margin-top: 5%;
+        display: block;
+        margin: auto;
+        height: 20vh;
+        width: 60vw;
+    }
+
+    /*Enemy**************************************************************************************************************/
+    
+    
+    .enemies{
+        height: fit-content;
+        padding-bottom: 5%;
+    }
+    
+    .enemies h1{
+        text-align: center;
+    }
+    
+    .enemy{
+        margin-top: 8%;
+        margin-left: 4%;
+        display:block;
+        align-items: center;
+        margin: auto;
+        height: fit-content;
+    }
+    
+    .enemy div{
+        width: 80vw;
+        
+        padding-bottom: 3%;
+        text-align: Left;
+    }
+    
+    .enemy h2{
+        text-align: center;
+        font-size: 25px;
+     
+    }
+    
+    .enemy ul{
+        display: block;
+        margin: auto;
+        max-width: 50vw;  
+        padding-bottom: 5%;
+    }
+    
+    .enemy li{
+        margin-top: 5%;
+        font-size: 20px;
+        
+        
+    }
+    
+    .enemy img{
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    /*Spells********************************************************************************************************/
+    #spellTable{
+        height: 60vh;
+    }
+
+    #spellTable h2{
+        font-size: 25px;
+    }
+
+    #spellTable table{
+        max-width: 85vw;
+        
+        margin: 1%;
+    }
+    
+    #spellTable th,td{
+        font-size: 8px;
+        height: fit-content;
+        width: 16vw;
+        font-weight: normal;
+        
+    }
+
+    #spellTable th{
+        text-decoration: underline;
+    }
+}
+

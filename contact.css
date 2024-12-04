@@ -1,0 +1,177 @@
+.container-big{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    
+}
+
+.container{
+    
+    
+    max-width: 800px;
+    background: #C0C0C0;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    
+    border-image: linear-gradient( 135deg , #6BFF50 50%, #C0C0C0 75%) 1;
+    transition: 0.5s;
+    border-radius: 5px; /* this doesn't work */
+    border-width: 4px;
+    border-style: solid;
+}
+
+.container:hover{
+    
+    
+   
+    border-image: linear-gradient( 135deg , #C0C0C0 50%, #6BFF50 75%) 1;
+    
+    transition: 0.5s;
+    
+}
+
+.container .text{
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+}
+
+.container form .form-row{
+    display: flex;
+    margin: 32px 0;
+}
+
+form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .form-row .textarea{
+    height: 70px;
+}
+
+.input-data input,
+.textarea textarea{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    background-color: #C0C0C0;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+    transform: translateY(-35px);
+    font-size: 14px;
+    color: #6BFF50;
+}
+
+.textarea textarea{
+    resize: none;
+    padding-top: 10px;
+}
+
+.input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #C0C0C0;
+}
+
+.input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #6BFF50;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+}
+
+.submit-btn .input-data{
+    overflow: hidden;
+    height: 45px!important;
+    width: 25%!important;
+}
+
+.submit-btn .input-data .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    background: #6BFF50;
+    transition: all 0.4s;
+}
+
+.submit-btn .input-data input{
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+
+input[type=date]:required:invalid {
+    color: transparent;
+}
+
+input[type=date]:focus {
+    color: black !important;
+}
+
+@media (max-width: 700px) {
+    .container .text{
+        font-size: 30px;
+    }
+    .container form{
+        padding: 10px 0 0 0;
+    }
+    .container form .form-row{
+        display: block;
+    }
+    form .form-row .input-data{
+        margin: 35px 0!important;
+    }
+    .submit-btn .input-data{
+        width: 40%!important;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .submit-btn .input-data{
+        width: 45%!important;
+    }
+}
