@@ -154,7 +154,7 @@ section{
 }
 
 #download button:hover{
-    background: black;
+    background: #282828;
     color: #6BFF50;
     border: #6BFF50 1px solid;
     cursor: pointer;
